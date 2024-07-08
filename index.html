@@ -5,18 +5,12 @@
 <head class = 'header'>
 
     <meta charset="UTF-8">
-    <title>Awesome NHL Game Analysis</title>
+    <title>Awesome Site where you will find recommendations for budegt travel</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
-
   </head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   <body>
@@ -32,10 +26,14 @@
       <p>Spain</p>
       <p>Italy</p>
       <a href="#Asia">Asia</a>
-      <a href="#NAmerica">North and Central America</a>
-      <p>Canada</p>
-      <a href ="./assets/mexico.html">Mexico</a>
-      <p>United States</p>
+      <a id="NAR" href="#NAmerica">North and Central America</a>
+      <div style = "display: none;"><p>Canada</p>
+        <p>Mexico</p>
+        <p>United States</p>
+        </div>
+      
+      <a href ="./assets/mexico.html"><p>Mexico</p></a>
+      
     </div>
     <section>
   
@@ -48,13 +46,9 @@
 
       </div>-->    
 
-       <!--this div creates input area to enter search parameters
-      <h3 id = 'drama'>Penalties - penalty location figure will be added</h3>
-      <div id = 'boxOfDVDsDrama'></div>      
+       <!--this div creates input area to enter search parameters 
 
       <h3 id = 'cfamilies'>All Goals - shot location figure will be added</h3>
-        <div id = 'boxOfDVDsFamily'></div>
-        <h3 id = 'thrillers'>Rosters</h3>
         <div id = 'boxOfDVDsThriller'></div>
 
         <h3 id = 'comedies'>Top 5 comedies</h3>
@@ -67,23 +61,8 @@
   </section>
 
     <script src = "./assets/script.js"></script>
-<div style="margin-left: 160px;" id = 'goalsChart'>
-  <h2>goals chart lives here</h2>
-<canvas id="myChart" style="width:100%;max-width:500px"></canvas>
-<div>
-  <div style="margin-left: 10px;" id = 'penChart'>
-    <h2>penalties chart lives here</h2>
-  <canvas id="penaltyChart" style="width:100%;max-width:500px"></canvas>
   <div>
-    <div>
-      <h2>shots chart lives here</h2>
-      <canvas id="shotsChart" style="width:100%;max-width:500px"></canvas>
-    </div>
-    <div>
-      <h2>blocked shots chart lives here</h2>
-      <canvas id="blockedShotsChart" style="width:100%;max-width:500px"></canvas>
-    </div>
-    <div>
+        <div>
       <h2>missed shots chart lives here</h2>
       <canvas id="missedShotsChart" style="width:100%;max-width:500px"></canvas>
     </div>
